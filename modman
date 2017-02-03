@@ -1,0 +1,6 @@
+src/app/code/community/Ambimax/YouTube            			        app/code/community/Ambimax/YouTube
+src/app/design/frontend/base/default/layout/ambimax/youtube.xml   	app/design/frontend/base/default/layout/ambimax/youtube.xml
+src/app/design/frontend/base/default/template/ambimax/youtube	    app/design/frontend/base/default/template/ambimax/youtube
+src/app/etc/modules/Ambimax_YouTube.xml           			        app/etc/modules/Ambimax_YouTube.xml
+src/app/locale/de_DE/Ambimax_YouTube.csv          			        app/locale/de_DE/Ambimax_YouTube.csv
+src/app/locale/de_CH/Ambimax_YouTube.csv          			        app/locale/de_CH/Ambimax_YouTube.csv

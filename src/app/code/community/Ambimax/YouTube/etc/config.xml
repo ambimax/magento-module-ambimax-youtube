@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ambimax_YouTube>
+            <version>1.0.0</version>
+        </Ambimax_YouTube>
+    </modules>
+
+    <global>
+        <blocks>
+            <ambimax_youtube>
+                <class>Ambimax_YouTube_Block</class>
+            </ambimax_youtube>
+        </blocks>
+        <helpers>
+            <ambimax_youtube>
+                <class>Ambimax_YouTube_Helper</class>
+            </ambimax_youtube>
+        </helpers>
+        <models>
+            <ambimax_youtube>
+                <class>Ambimax_YouTube_Model</class>
+            </ambimax_youtube>
+        </models>
+        <resources>
+            <ambimax_youtube_setup>
+                <setup>
+                    <module>Ambimax_YouTube</module>
+                    <class>Ambimax_YouTube_Model_Resource_Setup</class>
+                </setup>
+            </ambimax_youtube_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <ambimax_youtube>
+                    <file>ambimax/youtube.xml</file>
+                </ambimax_youtube>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <ambimax_youtube>
+                    <files>
+                        <default>Ambimax_YouTube.csv</default>
+                    </files>
+                </ambimax_youtube>
+            </modules>
+        </translate>
+    </frontend>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <avs_ambimax_youtube>
+                    <files>
+                        <default>Ambimax_YouTube.csv</default>
+                    </files>
+                </avs_ambimax_youtube>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <catalog>
+            <frontend>
+                <enable_youtube_video>1</enable_youtube_video>
+                <show_in_product_tab>1</show_in_product_tab>
+                <loop_videos>1</loop_videos>
+                <iframe_width>420</iframe_width>
+                <iframe_height>320</iframe_height>
+            </frontend>
+        </catalog>
+    </default>
+</config>

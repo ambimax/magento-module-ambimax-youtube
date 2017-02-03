@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <catalog_product_view>
+        <reference name="product.info">
+            <block type="ambimax_youtube/video" name="product.youtube" as="youtube"
+                   template="ambimax/youtube/video.phtml">
+                <action ifconfig="catalog/frontend/show_in_product_tab" method="addToParentGroup">
+                    <group>detailed_info</group>
+                </action>
+            </block>
+        </reference>
+    </catalog_product_view>
+</layout>
