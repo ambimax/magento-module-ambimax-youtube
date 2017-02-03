@@ -66,7 +66,7 @@
     <default>
         <catalog>
             <frontend>
-                <enable_youtube_video>1</enable_youtube_video>
+                <enable_youtube_video>0</enable_youtube_video>
                 <show_in_product_tab>1</show_in_product_tab>
                 <loop_videos>1</loop_videos>
                 <iframe_width>420</iframe_width>
