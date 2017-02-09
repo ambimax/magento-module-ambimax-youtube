@@ -54,11 +54,11 @@
     <adminhtml>
         <translate>
             <modules>
-                <avs_ambimax_youtube>
+                <ambimax_youtube>
                     <files>
                         <default>Ambimax_YouTube.csv</default>
                     </files>
-                </avs_ambimax_youtube>
+                </ambimax_youtube>
             </modules>
         </translate>
     </adminhtml>
