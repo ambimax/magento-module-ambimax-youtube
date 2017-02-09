@@ -4,7 +4,7 @@
         <reference name="product.info">
             <block type="ambimax_youtube/video" name="product.youtube" as="youtube"
                    template="ambimax/youtube/video.phtml">
-                <action ifconfig="catalog/frontend/show_in_product_tab" method="addToParentGroup">
+                <action ifconfig="catalog/frontend/enable_youtube_video" method="addToParentGroup">
                     <group>detailed_info</group>
                 </action>
             </block>
