@@ -126,7 +126,8 @@ class Ambimax_YouTube_Block_Video extends Mage_Core_Block_Template
             return '';
         }
 
-        if( ! $this->getProduct()->hasData(Ambimax_YouTube_Helper_Data::ATTRIBUTE_CODE)) {
+        $youTubeId = $this->getProduct()->getData(Ambimax_YouTube_Helper_Data::ATTRIBUTE_CODE);
+        if(empty($youTubeId)) {
             return '';
         }
 
