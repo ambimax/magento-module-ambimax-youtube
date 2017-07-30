@@ -29,7 +29,7 @@ class Ambimax_YouTube_Block_Video extends Mage_Core_Block_Template
      */
     public function getIframeWidth()
     {
-        if($this->hasData('width')) {
+        if ( $this->hasData('width') ) {
             return $this->getData('width');
         }
 
@@ -43,7 +43,7 @@ class Ambimax_YouTube_Block_Video extends Mage_Core_Block_Template
      */
     public function getIframeHeight()
     {
-        if($this->hasData('height')) {
+        if ( $this->hasData('height') ) {
             return $this->getData('height');
         }
 
@@ -67,9 +67,9 @@ class Ambimax_YouTube_Block_Video extends Mage_Core_Block_Template
      */
     public function getVideoIds($removeFirstElement = false)
     {
-        $videoIds = (array) array_map('trim', (array) explode(',', $this->_getVideoIds()));
+        $videoIds = (array)array_map('trim', (array)explode(',', $this->_getVideoIds()));
 
-        if($removeFirstElement) {
+        if ( $removeFirstElement ) {
             array_shift($videoIds);
         }
         return $videoIds;
@@ -92,10 +92,11 @@ class Ambimax_YouTube_Block_Video extends Mage_Core_Block_Template
      */
     public function getYoutubeUrl()
     {
-        $params[] = sprintf('loop=%s', (int) Mage::getStoreConfigFlag('catalog/frontend/loop_videos'));
+        $params[] = sprintf('loop=%s', (int)Mage::getStoreConfigFlag('catalog/frontend/loop_videos'));
 
-        if($this->isPlaylist()) {
-            return sprintf('https://www.youtube.com/embed/%s?playlist=%s&%s',
+        if ( $this->isPlaylist() ) {
+            return sprintf(
+                'https://www.youtube.com/embed/%s?playlist=%s&%s',
                 $this->getVideoId(),
                 implode(',', $this->getVideoIds(true)),
                 implode('&', $params)
@@ -122,12 +123,12 @@ class Ambimax_YouTube_Block_Video extends Mage_Core_Block_Template
      */
     protected function _toHtml()
     {
-        if( ! Mage::getStoreConfigFlag('catalog/frontend/enable_youtube_video')) {
+        if ( !Mage::getStoreConfigFlag('catalog/frontend/enable_youtube_video') ) {
             return '';
         }
 
         $youTubeId = $this->getProduct()->getData(Ambimax_YouTube_Helper_Data::ATTRIBUTE_CODE);
-        if(empty($youTubeId)) {
+        if ( empty($youTubeId) ) {
             return '';
         }
 
