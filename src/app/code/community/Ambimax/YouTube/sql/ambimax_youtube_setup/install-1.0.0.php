@@ -30,6 +30,4 @@ $installer->addAttribute(
     )
 );
 
-Mage::getModel('delphin_productattachment/attachment')->checkAndCreateFolder();
-
 $installer->endSetup();
